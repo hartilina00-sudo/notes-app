@@ -1,0 +1,85 @@
+:root {
+  --primary: #0078d4;
+  --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-gradient);
+  min-height: 100vh;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.add-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.input-note {
+  flex: 1;
+  padding: 12px 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.input-note:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.btn-add {
+  padding: 12px 25px;
+  margin-left: 10px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-add:hover { background: #005a9e; }
+
+.note-card {
+  background: var(--white);
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.note-card:hover { transform: scale(1.02); }
+
+.note-text { font-size: 16px; color: #34495e; flex: 1; }
+
+.btn-group { display: flex; gap: 8px; }
+
+.btn-edit { background: #ffc107; border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; }
+.btn-delete { background: #ff4757; color: white; border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; }

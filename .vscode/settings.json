@@ -1,0 +1,9 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/55be33c6-1798-4d0f-b857-49b795d676ff/resourceGroups/RG_NoteApp/providers/Microsoft.Web/sites/lina-notes-app",
+    "appService.deploySubpath": "build",
+    "appService.showBuildDuringDeployPrompt": false
+}
